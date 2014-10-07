@@ -1,0 +1,9 @@
+{
+	"name" : "Ethanol",
+	"desc" : "Molecule - ethanol",
+	"descriptors" : [ { 
+	    "target_id" : "307d91fbd90e41fd9542f147e6a7696b",
+	    "target_name" : "ethanol",
+	    "target_data" : "ethanol.zip"
+	} ]
+}

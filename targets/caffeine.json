@@ -1,0 +1,9 @@
+{
+	"name" : "Caffeine",
+	"desc" : "Molecule - caffeine",
+	"descriptors" : [ { 
+	    "target_id" : "31a55341be704ca7bc61bfd68c570136",
+	    "target_name" : "caffeine",
+	    "target_data" : "caffeine.zip"
+	} ]
+}

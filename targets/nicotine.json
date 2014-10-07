@@ -1,0 +1,9 @@
+{
+	"name" : "Nicotine",
+	"desc" : "Molecule - nicotine",
+	"descriptors" : [ { 
+	    "target_id" : "2d9a25343bba4f30b95b3e333756b9ed",
+	    "target_name" : "nicotine",
+	    "target_data" : "nicotine.zip"
+	} ]
+}

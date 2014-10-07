@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Molecule</title>
+		
+		<script type="text/javascript" src="js/threejs/loaders/PDBLoader.js"></script>
+
+		<link rel="stylesheet" href="css/molecule.css"/>
+		<script type="text/javascript" src="js/molecule.js"></script>
+		
+		<script>
+			window.addEventListener("arwebapploaded", function() {
+				init();
+
+				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+
+				letsee.addEventListener(
+					"trackstart", 
+					"targets/ethanol", 
+					function(e) {
+	   					document.getElementById("title").innerHTML = "Ethanol";
+	   					loadMolecule(e.target, "assets/ethanol.pdb"); 
+	   				}
+	   			);
+
+	   			letsee.addEventListener(
+	   				"trackstart", 
+	   				"targets/caffeine", 
+	   				function(e) {
+	   					document.getElementById("title").innerHTML = "Caffeine";
+	   					loadMolecule(e.target, "assets/caffeine.pdb"); 
+	   				}
+	   			);
+
+	   			letsee.addEventListener(
+	   				"trackstart", 
+	   				"targets/nicotine", 
+	   				function(e) {
+	   					document.getElementById("title").innerHTML = "Nicotine";
+	   					loadMolecule(e.target, "assets/nicotine.pdb"); 
+	   				}
+	   			);
+	   		});
+	    </script>
+	    
+	    <style media="place" type="text/css">
+	        #ethanol { -ar-target: object("targets/ethanol"); }
+	        #caffeine { -ar-target: object("targets/caffeine"); }
+	        #nicotine { -ar-target: object("targets/nicotine"); }
+	    </style>
+    
+	</head>
+	<body>
+		<div id="ethanol"></div>
+		<div id="caffeine"></div>
+		<div id="nicotine"></div>
+		<div id="footer" class="center">
+			<div><p id="title"></p></div>
+		</div>
+	</body>
+</html>
