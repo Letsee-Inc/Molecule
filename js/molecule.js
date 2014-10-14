@@ -66,7 +66,7 @@ function loadMolecule(uri, pdbfilepath) {
 	}
 
 	objects = [];
-	letsee.Renderer.removeChildObject(uri, root);
+	Letsee.Renderer.removeChildObject(uri, root);
 
 	loader.load(pdbfilepath, function(geometry, geometryBonds) {
 		var offset = THREE.GeometryUtils.center(geometry);
@@ -168,7 +168,7 @@ function loadMolecule(uri, pdbfilepath) {
 			objects.push(object);
 		}
 
-		letsee.Renderer.addChildObject(uri, root);
+		Letsee.Renderer.addChildObject(uri, root);
 	});
 }
 

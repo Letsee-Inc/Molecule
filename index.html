@@ -10,13 +10,13 @@
 		<script type="text/javascript" src="js/molecule.js"></script>
 		
 		<script>
-			window.addEventListener("arwebapploaded", function() {
+			window.addEventListener("letsee.load", function() {
 				init();
 
 				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
 				document.addEventListener( 'touchmove', onDocumentTouchMove, false );
 
-				letsee.addEventListener(
+				Letsee.addEventListener(
 					"trackstart", 
 					"targets/ethanol", 
 					function(e) {
@@ -25,7 +25,7 @@
 	   				}
 	   			);
 
-	   			letsee.addEventListener(
+	   			Letsee.addEventListener(
 	   				"trackstart", 
 	   				"targets/caffeine", 
 	   				function(e) {
@@ -34,7 +34,7 @@
 	   				}
 	   			);
 
-	   			letsee.addEventListener(
+	   			Letsee.addEventListener(
 	   				"trackstart", 
 	   				"targets/nicotine", 
 	   				function(e) {
